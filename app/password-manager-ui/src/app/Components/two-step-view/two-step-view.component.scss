@@ -1,0 +1,45 @@
+@import '../../global-vars.scss';
+
+#container{
+    float: right;
+    width: 100%;
+
+}
+
+#holder{
+    margin: auto;
+    vertical-align: middle;
+    width: 40em;
+    height: 20em auto;
+    padding-bottom: 20px;
+    border: 1px solid $border;
+    border-radius: 12px;
+    margin-top: 5em;
+    padding: 10px;
+}
+
+form div label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 11px;
+
+}
+
+#setupHolder p{
+    ///text-align: center;
+}
+#setupHolder img{
+    display: flex;
+    //margin: auto;
+}
+
+#setupHolder h4{
+    //text-align: center;
+}
+
+#holder h3{
+    //text-align: center;
+}

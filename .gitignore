@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/api/PasswordManager/PasswordManager/obj/Debug/net6.0/PasswordManager.assets.cache
+/api/PasswordManager/PasswordManager/obj/Debug/net6.0/PasswordManager.GeneratedMSBuildEditorConfig.editorconfig
+/api/PasswordManager/PasswordManager.Database/PasswordManager.Database.dbmdl
+/api/PasswordManager/PasswordManager.Database/PasswordManager.Database.jfm
+/api/PasswordManager/PasswordManager.Database/PasswordManager.Database.sqlproj.user
+Import Schema Logs/

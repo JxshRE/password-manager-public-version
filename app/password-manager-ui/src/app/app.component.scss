@@ -1,0 +1,8 @@
+@import './global-vars.scss';
+
+
+html, body{
+    margin: 0 !important;
+    font-family: $font;
+    color: $text-color;
+}

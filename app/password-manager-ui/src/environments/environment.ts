@@ -1,0 +1,15 @@
+export const environment = {
+    root_url: 'https://localhost:44320/api/',
+    login_endpoint: 'v1/auth/login',
+    register_endpoint: 'v1/auth/register',
+    reftoken_endpoint: 'v1/auth/refresh-token',
+    tfasetup_endpoint: 'v1/auth/2fa/setup',
+    tfaverify_endpoint: 'v1/auth/2fa/verify',
+    getpasswords_endpoint: 'v1/passwords/get',
+    passwordupdate_endpoint: 'v1/passwords/update',
+    passwordadd_endpoint: 'v1/passwords/add',
+    passwordgetbyid_endpoint: 'v1/passwords/get/{passwordGuid}',
+    passwordremove_endpoint: 'v1/passwords/remove/{passwordGuid}',
+    tfaisactive_endpoint: 'v1/auth/2fa/isActive',
+    user_endpoint: 'v1/auth/user',
+};

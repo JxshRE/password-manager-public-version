@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[PasswordGroup]
+(
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY, 
+    [InstanceGuid] UNIQUEIDENTIFIER NOT NULL DEFAULT NEWID(), 
+    [Name] VARCHAR(50) NOT NULL, 
+    [Owner] INT NOT NULL FOREIGN KEY REFERENCES [User](Id), 
+    [OwnerGuid] UNIQUEIDENTIFIER NOT NULL,
+    [CreatedAt] DATETIME DEFAULT (getdate()) NULL,
+    [ModifiedAt] DATETIME DEFAULT (getdate()) NULL,
+	
+)

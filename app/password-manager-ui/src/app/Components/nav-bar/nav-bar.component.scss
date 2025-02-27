@@ -1,0 +1,200 @@
+@import '../../global-vars.scss';
+#navbar{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid $border;
+    margin: 0;
+}
+
+#sidebar{
+    overflow: hidden;
+    height: 100vh;
+    width: 10%;
+    border-right: 1px solid $border;
+    position: absolute;
+}
+
+#sidebar #controls ul{
+    color: $text-secondary !important;
+}
+
+#profile-holder{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#profile-holder #info{
+    width: 75%;
+    height: 30px;
+    float: left;
+    padding-left: 5px;
+    position: inherit;
+    display: flex;
+}
+
+#info #username{
+    font-size: 10px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 15px;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    top: 0;
+    font-weight: bold;
+    color: $text-color;
+}
+
+#info #prompt{
+    font-size: 10px;
+    height: 15px;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    margin-top: 20px;
+    float: left;
+    display: inline-block;    
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    color: $text-secondary
+}
+
+#info #account{
+    width: 100%;
+    height: 50%;
+    line-height: 5px;
+    font-size: 8px;
+}
+
+#info ul{
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    float: left;
+}
+
+#profile-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    border: 2px solid $border;
+    float: left;
+}
+
+#profile-img p{
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    line-height: 25%;
+    color: $text-secondary;
+}
+
+#sidebar h1{
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#navbar h1{
+    width: 20%;
+    overflow: hidden;
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+#navbar ul{
+    list-style: none;
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+#navbar ul li{
+    float: right;
+}
+#navbar li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: $text-color;
+    font-size: 18px;
+}
+
+#controls ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#controls ul li{
+    cursor: pointer;
+}
+
+@media (min-width:961px)  { 
+    
+#info #account{
+    width: 100%;
+    height: 50%;
+    float: right;
+    font-size: 10px;
+}
+
+#profile-holder #info{
+    width: 65%;
+    height: 30px;
+    float: left;
+    padding-left: 5px;
+    position: inherit;
+    display: flex;
+}
+
+#sidebar h1{
+    width: 95%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+}
+
+#controls h3{
+    padding-left: 5px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#controls ul{
+    margin-top: 2px;
+    font-size: 10px;
+}
+
+#controls{
+    display: block;
+    margin-top: 3em;
+}
+
+#controls a{
+    text-decoration: none;
+    color: $text-secondary;
+}
+
+#controls li{
+    padding-bottom: 3px;
+}

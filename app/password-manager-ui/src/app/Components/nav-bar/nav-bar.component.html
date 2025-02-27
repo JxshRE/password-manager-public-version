@@ -1,0 +1,38 @@
+<div id="navbar" *ngIf="!isAuthed">
+    <h1>Password Manager</h1>
+    <ul>
+        <li>
+            <a *ngIf="!isAuthed" href="/">Sign In</a>
+            <a *ngIf="isAuthed" style="cursor: pointer" (click)="logout()">Sign Out</a>
+        </li>
+        <li *ngIf="!isAuthed"><a href="/register">Register</a></li>
+    </ul>
+</div>
+
+<div *ngIf="isAuthed" id="sidebar">
+    <h1>Password Manager</h1>
+    <div id="profile-holder">
+        <div id="profile-img">
+            <p *ngIf="username[0]">
+                {{username[0].toUpperCase()}}
+            </p>
+        </div>
+        <div id="info">
+           <a id="username">{{username}}</a>
+           <a id="account">My Account</a>
+        </div>
+    </div>
+    <div id="controls">
+        <h3>Account</h3>
+        <ul>
+            <li><a (click)="logout()">Sign out</a></li>
+        </ul>
+    </div>
+    <div id="controls" style="margin-top: 20px">
+        <h3>Actions</h3>
+        <ul>
+            <li><a href="passwords">View Passwords</a></li>
+            <li><a href="generate">Generate Password</a></li>
+        </ul>
+    </div>
+</div>

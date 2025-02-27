@@ -1,0 +1,61 @@
+
+<div id="login-form">
+    <div id="login-form-inner" *ngIf="!isRegistering">
+        <h2>Sign in to continue</h2>
+        <p>No Account? <a href="/register">Create one</a></p>
+
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+            <div class="form-item">
+                <input type="text" placeholder="Email" name="email" formControlName="email" required>
+                <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="email?.errors?.['required'] && email?.touched">Email is required</p>
+                <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="email?.errors?.['email']">Value must be a valid email</p>
+            </div>
+            <div class="form-item-pw">
+                <div class="pw-holder">
+                    <input type="{{showPassword ? 'text' : 'password'}}" placeholder="Password" name="password" formControlName="password" required>
+                    <span (click)="toggleVisibility()" class="material-symbols-outlined">{{showPassword ? 'visibility' : 'visibility_off'}}</span>
+                </div>
+                <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="password?.errors?.['required'] && password?.touched">Password is required</p>
+            </div>
+            <button *ngIf="!isSubmitting" type="submit">Sign In</button>
+            <button *ngIf="isSubmitting" type="submit" disabled>Sign In</button>
+            <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="failedLogin">Failed to login... Please check credentials.</p>
+        </form>
+    </div>
+    <div id="login-form-inner" *ngIf="isRegistering">
+        <h2>Create Account</h2>
+        <p>Already have an account? <a href="/">Sign in</a></p>
+
+        <form [formGroup]="loginForm" (ngSubmit)="register()">
+            <div class="form-item">
+                <input type="text" placeholder="Email" name="email" formControlName="email" required>
+                <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="email?.errors?.['required'] && email?.touched">Email is required</p>
+                <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="email?.errors?.['email']">Value must be a valid email</p>
+            </div>
+            <div class="form-item-pw">
+                <div class="pw-holder">
+                    <input type="{{showPassword ? 'text' : 'password'}}" placeholder="Password" name="password" formControlName="password" required>
+                    <span (click)="toggleVisibility()" class="material-symbols-outlined">{{showPassword ? 'visibility' : 'visibility_off'}}</span>
+                </div>
+                <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="password?.errors?.['required'] && password?.touched">Password is required</p>
+                <p class="text-danger" style="font-size: 12px; padding-top: 5px;" ></p>
+                <div *ngIf="password?.errors?.['pattern'] && password?.touched" class="text-danger" style="font-size: 12px;">
+                    <p class="text-danger">Make sure your password meets the following requirements:</p>
+                    <ul>
+                        <li>At least 8 characters</li>
+                        <li>At least 1 number</li>
+                        <li>At least 1 lower case character</li>
+                        <li>At least 1 upper case character</li>
+                        <li>At least 1 special character</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="font-size: 12px; padding-top: 5px;">Make sure your password is memorable as it cannot be recovered.</p>
+
+            <button *ngIf="!isSubmitting" type="submit">Register</button>
+            <button *ngIf="isSubmitting" type="submit" disabled>Register</button>
+            <p class="text-danger" style="font-size: 12px; padding-top: 5px;" *ngIf="failedLogin">Failed to login... Please check credentials.</p>
+        </form>
+    </div>
+</div>

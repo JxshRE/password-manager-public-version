@@ -1,0 +1,86 @@
+@import '../../global-vars.scss';
+
+#login-form{
+    margin: auto;
+    vertical-align: middle;
+    width: 40em;
+    height: 20em auto;
+    padding-bottom: 20px;
+    border: 1px solid $border;
+    border-radius: 12px;
+    margin-top: 10%;
+}
+
+#login-form-inner{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#login-form-inner h2{
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+#login-form-inner p{
+    color: $text-secondary;
+    padding: 0;
+    margin: 0;
+}
+
+#login-form-inner p a {
+    color: $text-highlight;
+    text-decoration: none;
+}
+
+#login-form-inner form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.form-item{
+    margin-top: 20px;
+}
+
+.form-item input{
+    padding-left: 10px;
+    width: calc(100% - 14px);
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid $border;
+    font-size: 12px;
+    
+}
+
+#login-form-inner form button{
+    width: 100%;
+    height: 35px;
+    margin-top: 35px;
+    background-color: $component-bg-inner;
+    border: 1px solid $component-border;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font;
+    cursor: pointer;
+}
+
+#login-form-inner form button:hover{
+    background-color: $component-border;
+}
+
+#login-form-inner form button:disabled{
+    width: 100%;
+    height: 35px;
+    margin-top: 35px;
+    background-color: $component-bg-inner-disabled;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font;
+    cursor: pointer;
+}
