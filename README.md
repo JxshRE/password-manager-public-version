@@ -15,3 +15,10 @@ I also created a password generator which would pseudo randomly pick out a chara
 As part of the project, I also added two step authentication to extend on the security aspect of the project, this would utilise google authenticator with the help of the [GoogleAuthenticator](https://www.nuget.org/packages/GoogleAuthenticator/3.3.0-beta1) Nuget package, to which the API would send the generated QR code and key to the client for use.
 
 Finally, the standard API functionalities were added for storing user passwords, the data it would store in regards to this would be the encrypted data that would be sent from the client, no encryption or decryption of the passwords is done on the API. The client is the one that handles the plain text data. 
+
+Example Images:
+![test29](https://github.com/user-attachments/assets/147f19e8-19e2-446f-9e06-20110e837760)
+
+![test31](https://github.com/user-attachments/assets/5bc2eeb3-1c5b-4e2d-af00-d4aee0323563)
+
+![test32](https://github.com/user-attachments/assets/373b1063-603f-4f2b-9756-1d5299e4e60a)
