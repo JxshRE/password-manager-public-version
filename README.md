@@ -3,6 +3,22 @@ This was the password manager I created as part of my degree.
 
 Some config has been removed for the public version. 
 
+### Demo Screenshots / Video
+
+https://github.com/user-attachments/assets/6a6df49b-a8b4-464e-9fe9-d21b1d246d21
+
+
+### The API only handles the encrypted versions of the passwords
+Response payload example from getting all passwords for the logged in user:
+
+![password_manager_demo_ss_2](https://github.com/user-attachments/assets/952a6cd8-8968-4fc2-a90e-479b68dc4cc3)
+
+Example payload sent to API from client:
+
+![password_manager_demo_ss_1](https://github.com/user-attachments/assets/41aa96f1-bce2-422e-acec-bb70862ab9d3)
+
+
+
 ### Quick Overview
 During the final year of my computer science course at university (graduated in 2024), I chose to create a password manager for my individual project.
 
