@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/6a6df49b-a8b4-464e-9fe9-d21b1d246d21
 
 
 ### The API only handles the encrypted versions of the passwords
-Response payload example from getting all passwords for the logged in user:
+Response payload example from getting all passwords for the logged in test user:
 
 ![password_manager_demo_ss_2](https://github.com/user-attachments/assets/952a6cd8-8968-4fc2-a90e-479b68dc4cc3)
 
